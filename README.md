@@ -22,7 +22,7 @@ It is useful when you want to have a visual warning telling you which environmen
 
 - Install the module composer by running
 
-`composer require catgento/module-environments`
+`composer require catgento/magento-2-environments`
 
  - enable the module by running 
 
