@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="system">
+			<resource>Catgento_Environments::config_catgento_environments</resource>
+			<group id="environment" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+				<label>Environment Bar</label>
+				<field id="enable" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="select">
+					<label>Enable</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+                <field id="production_url" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Production URL</label>
+                    <comment/>
+                </field>
+                <field id="production_color" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Production Bar Color</label>
+                    <comment>Hexadecimal color. Recommended: #ff5f12 (red)</comment>
+                </field>
+                <field id="staging_url" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Staging URL</label>
+                    <comment/>
+                </field>
+                <field id="staging_color" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Staging Bar Color</label>
+                    <comment>Hexadecimal color. Recommended: #fbff12 (yellow)</comment>
+                </field>
+                <field id="development_url" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Development URL</label>
+                    <comment/>
+                </field>
+                <field id="development_color" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+                    <label>Development Bar Color</label>
+                    <comment>Hexadecimal color. Recommended: #12ff19 (green)</comment>
+                </field>
+			</group>
+		</section>
+	</system>
+</config>

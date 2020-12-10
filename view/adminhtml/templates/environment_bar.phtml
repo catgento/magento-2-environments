@@ -1,0 +1,16 @@
+<?php /* @var $block \Catgento\Environments\Block\Environment */ ?>
+<?php $environment = $block->getEnvironmentVars(); ?>
+
+<div class="environment-bar" style="background-color: <?= $environment['color']; ?>;">
+    <?= $environment['text'] ?>
+</div>
+
+<script>
+    require(["jquery"],function($){
+        $(document).ready(function(){
+            $('head').append('<style>.menu-wrapper-environment:before{ border-left: 5px solid <?= $environment['color']; ?>; }</style>');
+            $('.menu-wrapper').addClass('menu-wrapper-environment');
+            $('.environment-bar').detach().appendTo('.page-header-actions');
+        })
+    })
+</script>

@@ -1,0 +1,34 @@
+{
+    "name": "catgento/magento-2-environments",
+    "description": "Show Environment Bar in Backoffice",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Pau Iranzo",
+            "email": "paugnu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.1.3||~7.2.0||~7.3.0||~7.4.0",
+        "magento/framework": ">=100.0.0",
+        "magento/module-backend": ">=100.0.0",
+        "magento/module-cron": ">=100.0.0"
+    },
+    "keywords": [
+        "magento 2",
+        "magento2",
+        "backoffice",
+        "magento2-module"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Catgento\\Environments\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
