@@ -3,7 +3,7 @@
     "description": "Show Environment Bar in Backoffice",
     "type": "magento2-module",
     "license": "OSL-3.0",
-    "version": "1.0.2",
+    "version": "0.9.0",
     "authors": [
         {
             "name": "Pau Iranzo",
